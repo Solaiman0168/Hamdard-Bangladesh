@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html> 
+    <head>       
+        <!--load all reference-->
+        <meta http-equiv="Content-Security-Policy"/>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="assets/css/jquery.mobile.min.css" />
+        <script type="text/javascript" src="assets/js/libs/jquery/jquery.min.js"></script>
+        <script>
+            $(document).bind("mobileinit", function () {
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+            });
+        </script>
+        <script type="text/javascript" src="assets/js/libs/jquery-mobile/jquery.mobile.min.js"></script>
+     
+
+        <style>
+            #hamdardImg {opacity:0;
+                         -moz-transition: opacity 2s; /* Firefox 4 */
+                         -webkit-transition: opacity 2s; /* Safari and Chrome */
+                         -o-transition: opacity 2s;
+                         transition: opacity 5s;
+            }
+            .ui-loader-default {
+                opacity: 1 !important;		
+            }
+        </style>        
+    </head>
+
+    <body style="background: white;">
+        <div data-role="page" id="page_index" data-theme="b" style="background: #ffffff;">
+            <div data-role="content" style="color: #666; text-shadow:none; opacity: 0.85; height: 100%;">
+
+                <br>
+                <div style="text-align: center;  font-size: 1em; font-weight: bold;">
+                    <img onload="this.style.opacity = '1';" id="hamdardImg" src="assets/img/hamdard/Hamdard English.png"
+                         style="width: 80%; height: auto;">  
+                    <br>
+                    <span>Trusted Name, Tested Products</span>
+                </div>
+
+                <div style="text-align: center; ">  
+                    <span style="font-size: 0.90em; font-family: monospace;">Providing Goodness Of Nature In Your Service</span>
+                </div>
+
+
+                <div class="ui-grid-b">
+                    <div class="ui-block-a" >
+                        <img src="assets/img/hamdard/gmp.png" style="padding-left: 22px; float: left; width: 50%; height: auto;">
+                    </div>
+                    <div class="ui-block-b" style="padding-top: 5px; font-family: cursive; text-align: center;">
+                        <span >SINCE 1906</span>
+                    </div>
+                    <div class="ui-block-c" >
+                        <img src="assets/img/hamdard/iso.png" style="padding-right: 22px; float: right; width: 47%; height: auto;">
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="ui-grid-solo" style="text-align: center;" >
+                    <div class="ui-block-a" >
+                        <a href="bn/home.html" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-btn-inline"  style="border: none; width: 75%;  background: #D02A5C; color: white">
+                            বাংলা
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a" style="text-align: center;">
+                        <a href="en/home.html" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-btn-inline" style="border: none; width: 75%; background: #D02A5C;  color: white">
+                            English
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="border-color: transparent; background: #ffffff; color: #666; text-shadow:none; opacity: 0.85;" >
+                <div style="text-align: center; ">
+                    <span style="font-size: 0.8em; font-style: italic;">
+                        Developed By 
+                        <br>
+                        Renascence Software
+                        <br>
+                        Version 2.0.1
+                    </span>
+                </div>                
+            </div>
+        </div>
+    </body>
+</html>
